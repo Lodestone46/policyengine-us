@@ -1,0 +1,23 @@
+- name: LA Standard deduction if single filer
+  period: 2022
+  input:
+    filing_status: SINGLE
+    state_code: LA
+  output:
+    la_standard_deduction: 4_500
+
+- name: LA Standard deduction if married filing jointly
+  period: 2022
+  input:
+    filing_status: JOINT
+    state_code: LA
+  output:  
+    la_standard_deduction: 9_000
+
+- name: LA Standard deduction if married filing separately
+  period: 2022
+  input:
+    filing_status: SEPARATE
+    state_code: LA
+  output:  
+    la_standard_deduction: 4_500
